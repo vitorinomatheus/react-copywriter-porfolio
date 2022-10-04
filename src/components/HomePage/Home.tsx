@@ -18,7 +18,7 @@ export default function Home(props: any) {
         alignContent: 'center',
         marginTop: { md: 0, xs: 0 },
         px: props.global.paddingXPattern,
-        py: { xs: 10, md: 12, xl: 25 }
+        py: { xs: 10, md: 12, xl: 20 }
     }
 
     const [isMounted, setMounted] = useState(false)
@@ -45,7 +45,7 @@ export default function Home(props: any) {
                         item
                     >
                         <Mui.Typography
-                            fontSize={{ xs: '1.2rem', md: '1.5rem', xl: '2rem' }}
+                            fontSize={{ xs: '1.2rem', md: '1.5rem', xl: '1.8rem' }}
                             fontFamily="inherit"
                             textAlign="center"
                             pt={{ xs: 6, md: 0 }}
@@ -58,7 +58,7 @@ export default function Home(props: any) {
                         <Mui.Divider />
 
                         <Mui.Typography
-                            fontSize={{ xs: '1.2rem', md: '1.5rem', xl: '2rem' }}
+                            fontSize={{ xs: '1.2rem', md: '1.5rem', xl: '1.8rem' }}
                             fontFamily="inherit"
                             textAlign="center"
                             color='black'

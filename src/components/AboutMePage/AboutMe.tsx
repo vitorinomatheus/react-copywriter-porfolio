@@ -36,7 +36,7 @@ export default function AboutMe(props: any) {
                             >
                                 <Mui.Divider sx={{ 
                                     position: 'absolute', 
-                                    paddingX: { xs: 3, md: 15 },
+                                    paddingX: { xs: 3, md: 15, xl: 21 },
                                     width: '100%', 
                                     top: '50%', 
                                     backgroundColor: props.global.primaryRed
@@ -50,10 +50,10 @@ export default function AboutMe(props: any) {
                                 >
                                 <Mui.Typography
                                     fontFamily={props.global.primaryFont}
-                                    fontSize = {{ xs: '1.8rem', md: '2.2rem', xl:'2.8rem' }} 
+                                    fontSize = {{ xs: '1.8rem', md: '2.2rem', xl:'2.4rem' }} 
                                     paddingX={{ xs: 3, md: 15 }}
                                     color={props.global.primaryRed}
-                                    textAlign = "end"
+                                    textAlign = {{md: "end", xl: "center"}}
                                 >
                                     {pageName}
                                 </Mui.Typography>
@@ -71,13 +71,13 @@ export default function AboutMe(props: any) {
                         <Mui.Grid
                             container
                             sx={{
-                                px: { xs: 2, md: 4 },
+                                px: { xs: 2, md: 4, xl: 15 },
                                 py: { xs: 1, md: '6vh' }
                             }}
                         >
                             <Mui.Grid 
                                 item
-                                md={4} xs={0}
+                                md={4} xs={0} xl={5}
                                 display="grid"
                                 justifyItems="start"
                                 alignItems="center"
@@ -100,14 +100,14 @@ export default function AboutMe(props: any) {
                             
                             <Mui.Grid
                                 item
-                                md={8}
+                                md={8} xl={7}
                                 display= "flex"
                                 flexDirection="column"
                                 justifyItems="center"
                                 alignItems="center"
                             >
                                 <Mui.Typography
-                                    fontSize = {{ xs: '1.5rem', md: '1.7rem', xl:'2.4rem' }}
+                                    fontSize = {{ xs: '1.5rem', md: '1.7rem', xl:'2.1rem' }}
                                     fontFamily = {props.global.secondaryFont}
                                     color={props.global.primaryRed}
                                     alignSelf="start"
@@ -116,7 +116,7 @@ export default function AboutMe(props: any) {
                                 </Mui.Typography>
 
                                 <Mui.Typography
-                                    fontSize = {{ xs: '1.2rem', md: '1.4rem', xl:'2.1rem' }}
+                                    fontSize = {{ xs: '1.2rem', md: '1.4rem', xl:'1.8rem' }}
                                     fontFamily = {props.global.secondaryFont}
                                     alignSelf="start"
                                     marginBottom='2.2rem'
@@ -126,7 +126,7 @@ export default function AboutMe(props: any) {
                                 </Mui.Typography>
 
                                 <Mui.Typography
-                                    fontSize = {{ xs: '1rem', md: '1.2rem', xl:'1.9rem' }}
+                                    fontSize = {{ xs: '1.1rem', md: '1.2rem', xl:'1.5rem' }}
                                     fontFamily = {props.global.secondaryFont}
                                     height="100%"
                                     display='flex'
@@ -140,7 +140,7 @@ export default function AboutMe(props: any) {
                                         display: "flex",
                                         flexGrow: 1,
                                         alignItems: 'center',
-                                        my: 3
+                                        my: 3.5
                                     }}
                                 >
 

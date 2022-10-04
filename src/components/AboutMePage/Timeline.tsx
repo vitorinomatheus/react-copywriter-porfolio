@@ -33,7 +33,7 @@ export default function TimelineComp (props: any) {
 
     const timelineTextStyle = {
         cursor: 'pointer',
-        fontSize: { xs: '1rem', md: '1.2rem', xl:'1.9rem' },
+        fontSize: { xs: '1rem', md: '1.2rem', xl:'1.6rem' },
         '&:hover': {
             color: props.global.primaryRed,
             transform: 'scale(1.009)'
@@ -59,14 +59,19 @@ export default function TimelineComp (props: any) {
                 }}
             >
 
-                <Mui.Grid item display='flex' md={12}>
+                <Mui.Grid 
+                    item 
+                    display="flex" 
+                    justifyContent={{ xs: 'center', md: 'start' }}
+                    xs={12}>
 
                     <Mui.Typography
                         fontFamily={props.global.primaryFont}
-                        fontSize = {{ xs: '1.4rem', md: '1.8rem', xl:'2.4rem' }} 
+                        fontSize = {{ xs: '1.4rem', md: '1.8rem', xl:'2.1rem' }}
+                        px= {{ xs: 3, md: 15, xl: 21 }} 
                         mb={{ xs: 2, md: 1, xl: 2 }}
                         color='white'
-                        justifySelf = {{xs: 'center', md: "start"}}
+                        justifySelf = {{ md: "start"}}
                     >
                         UM POUCO MAIS SOBRE MIM
                     </Mui.Typography>
@@ -79,13 +84,14 @@ export default function TimelineComp (props: any) {
                     sx={{ 
                         backgroundColor: 'white', 
                         borderRadius: '10px',
-                        paddingY: { xs: 1, md: 2, xl: 2 } 
+                        paddingY: { xs: 1, md: 2, xl: 2 },
+                        marginX: { xs: 3, md: 15, xl: 21 } 
                     }}
                 >
                     <Mui.Typography
                         fontFamily= {props.global.secondaryFont}
                         textAlign="center"
-                        fontSize={{ xs: '1rem', md: '1.3rem', xl:'2rem' }}
+                        fontSize={{ xs: '1rem', md: '1.3rem', xl:'1.7rem' }}
                         paddingX={{ xs: 3, md: 15 }}
                         mb={{ xs: 2, md: 7 }}
                     >

@@ -140,13 +140,13 @@ export default function ContactForm (props: any) {
         <>
         <Mui.Fade in={isMounted} timeout={800}>
             <Mui.Box 
-                    px={props.global.paddingXPattern}
-                    py={ {xs: 7, md: '6vh'} }
+                    px={{xs: 1, md: 10, xl: 25}}
+                    py={ {xs: 7, md: '6vh', xl: 10} }
                     flexGrow = '1fr'>
 
                     <Mui.Typography 
                         textAlign='center'
-                        fontSize = {{ xs: '1.4rem', md: '1.6rem', xl:'2.3rem' }} 
+                        fontSize = {{ xs: '1.4rem', md: '1.6rem', xl:'1.9rem' }} 
                         fontFamily={props.global.primaryFont}
                         color={props.global.primaryRed}>
                         { pageMainTitle }
@@ -154,7 +154,7 @@ export default function ContactForm (props: any) {
 
                     <Mui.Typography
                         textAlign='center'
-                        fontSize = {{ xs: '1rem', md: '1.2rem', xl:'1.9rem' }} 
+                        fontSize = {{ xs: '1rem', md: '1.2rem', xl:'1.5rem' }} 
                         fontFamily={props.global.primaryFont}
                         color={props.global.primaryRed}>
                         { pageSubtitle }
@@ -162,7 +162,7 @@ export default function ContactForm (props: any) {
 
                     <Mui.Typography
                         textAlign='center'
-                        fontSize = {{ xs: '0.8rem', md: '1rem', xl:'1.7rem' }} 
+                        fontSize = {{ xs: '0.8rem', md: '1rem', xl:'1.3rem' }} 
                         fontFamily={props.global.primaryFont}
                         color={props.global.primaryRed}
                         >

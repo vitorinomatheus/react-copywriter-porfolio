@@ -37,6 +37,7 @@ const projects: Array<Project> = [
         name: 'Roteiro para podcast',
         description: 'Desenvolvi roteiros para podcast em construção. O conteúdo de mídia buscava transportar o ouvinte para experiências sensoriais do dia a dia, como o ato de beber água, utilizando linguagem descritiva e frases de teor sinestésico.',
         img: hand,
+        url:'https://docs.google.com/document/d/e/2PACX-1vTkdRrcSn7RXgSZLwNcn9FcAO84IBJJ3WTbXVVCuwtAFp6vbADxoXqekhJUJSTQvdfBxIQBkd9vf7kf/pub'
     }
 ];
 
@@ -94,8 +95,9 @@ export default function Portfolio(props: any) {
                     </Mui.Box>
 
                 <Mui.Grid container 
-                        spacing={7}
-                        px={{ xs: 1, md: 6 }}
+                        columnSpacing={11}
+                        rowSpacing = {5}
+                        paddingX={props.global.paddingXPattern}
                         py={{ xs: 4, md: '6vh' }}
                     >                        
                             {projects.map((project) => (
@@ -104,7 +106,7 @@ export default function Portfolio(props: any) {
                                         sx={{ 
                                             display: 'grid',
                                             gridTemplateRows: 'max-content 1fr',
-                                            height: {md:'35vw', xs: '57vh', xl: '37vw'}, 
+                                            height: {md:'35vw', xs: '57vh', xl: '34vw'}, 
                                             cursor: 'pointer',
                                             boxShadow: '0px 0px 3px 1px black',
                                             "&:hover": {
@@ -117,7 +119,7 @@ export default function Portfolio(props: any) {
                                             image={project.img}
                                             alt="Project Image"
                                             sx= {{
-                                                height: { md: '33vh', xs: '18vh'}
+                                                height: { md: '33vh', xs: '18vh', xl: '25vh'}
                                             }}
                                         />
 
@@ -135,7 +137,7 @@ export default function Portfolio(props: any) {
                                                 alignSelf='end'
                                                 height='fitContent'
                                                 variant='body1'
-                                                fontSize = {{ xs: '1.4rem', md: '1.5rem', xl:'1.8rem' }}
+                                                fontSize = {{ xs: '1.4rem', md: '1.5rem', xl:'1.5rem' }}
                                                 fontFamily={props.global.primaryFont}
                                                 color={props.global.primaryRed}>
                                                 {project.name}
@@ -144,7 +146,7 @@ export default function Portfolio(props: any) {
                                             <Mui.Typography
                                                 alignSelf="center"
                                                 fontFamily={props.global.secondaryFont}
-                                                fontSize = {{ xs: '1rem', md: '1rem', xl:'1.6rem' }}
+                                                fontSize = {{ xs: '1rem', md: '1rem', xl:'1.3rem' }}
                                             >
                                                 {project.description}
                                             </Mui.Typography>
@@ -153,7 +155,8 @@ export default function Portfolio(props: any) {
                                         <Mui.CardActions
                                             sx = {{
                                                 display: 'flex',
-                                                justifyContent: 'center'
+                                                justifyContent: 'center',
+                                                pb: 3
                                             }}
                                         >
                                             <Mui.Link

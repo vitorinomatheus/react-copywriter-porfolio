@@ -15,6 +15,11 @@ import TimelineComp from "./components/AboutMePage/Timeline";
 // e) Revisão final do código 
 // f) Fazer programa de administração do site;
 
+// Princípios a serem aperfeiçoados no projeto
+// 1 - Tipagem e uso do TypeScript
+// 2 - Fetching e renderização async
+// 3 - Arquitetura de inteligência própria ao React (Ex.: Hooks)
+
 const globalProps = {
     siteTitle: 'Natália Meisen',
     drawerTitle: 'Meu portfólio',
@@ -25,7 +30,7 @@ const globalProps = {
     paddingXPattern: {
         xs: 1,
         md: 10,
-        xl: 2
+        xl: 25
     },
     mainPicBoxShadow: {
         xs: '0px 0px 0px 3px #820000',
@@ -43,52 +48,97 @@ export default function App () {
         window.scrollTo(0, 0)
     }
 
-    if(activeComponent == 'Sobre mim') {
-        return (
-            <>
-                <Header global={ globalProps } navigate={ navigate } />
-                <AboutMe global ={ globalProps } navigate={ navigate } />
-                <TimelineComp global = { globalProps } />
-            </>
-        )
-    }
-
-    else if(activeComponent == 'Contato') {
-        return (
-            <>
-                <Header global={ globalProps } navigate={ navigate } />
-                <ContactForm global={ globalProps } />
-            </>
-        )
-    }
-
-    else if(activeComponent == 'Portfólio') {
-        return (
-            <>
-                <Header global={ globalProps } navigate={ navigate } />
-                <Portfolio global={ globalProps } />
-                <Footer global={ globalProps } />
-            </>
-        )
-    }
-
-    else {
-        return (
-            <>
-                <Box 
-                    sx={{ 
-                        height: "100vh", 
-                        display: 'flex', 
-                        flexDirection:'column'
-                    }}
-                >
-                    <Header global={ globalProps } navigate={ navigate } />           
-                    <Home global={ globalProps } />
-                    <Projects global={ globalProps } navigate={ navigate }/>
-                    <ContactForm global={ globalProps }  />
+    switch(activeComponent){
+        case 'Sobre mim':
+            return (
+                <>
+                    <Header global={ globalProps } navigate={ navigate } />
+                    <AboutMe global ={ globalProps } navigate={ navigate } />
+                    <TimelineComp global = { globalProps } />
+                </>
+            );
+        case 'Contato':
+            return (
+                <>
+                    <Header global={ globalProps } navigate={ navigate } />
+                    <ContactForm global={ globalProps } />
+                </>
+            );
+        case 'Portfólio':
+            return (
+                <>
+                    <Header global={ globalProps } navigate={ navigate } />
+                    <Portfolio global={ globalProps } />
                     <Footer global={ globalProps } />
-                </Box>                     
-            </>
-        )
-    }
+                </>
+            );
+        default:
+            return (
+                <>
+                    <Box 
+                        sx={{ 
+                            height: "100vh", 
+                            display: 'flex', 
+                            flexDirection:'column'
+                        }}
+                    >
+                        <Header global={ globalProps } navigate={ navigate } />           
+                        <Home global={ globalProps } />
+                        <Projects global={ globalProps } navigate={ navigate }/>
+                        <ContactForm global={ globalProps }  />
+                        <Footer global={ globalProps } />
+                    </Box>                     
+                </>
+            );
+        }
+    
+
+    // if(activeComponent == 'Sobre mim') {
+    //     return (
+    //         <>
+    //             <Header global={ globalProps } navigate={ navigate } />
+    //             <AboutMe global ={ globalProps } navigate={ navigate } />
+    //             <TimelineComp global = { globalProps } />
+    //         </>
+    //     )
+    // }
+
+    // else if(activeComponent == 'Contato') {
+    //     return (
+    //         <>
+    //             <Header global={ globalProps } navigate={ navigate } />
+    //             <ContactForm global={ globalProps } />
+    //         </>
+    //     )
+    // }
+
+    // else if(activeComponent == 'Portfólio') {
+    //     return (
+    //         <>
+    //             <Header global={ globalProps } navigate={ navigate } />
+    //             <Portfolio global={ globalProps } />
+    //             <Footer global={ globalProps } />
+    //         </>
+    //     )
+    // }
+
+    // else {
+    //     return (
+    //         <>
+    //             <Box 
+    //                 sx={{ 
+    //                     height: "100vh", 
+    //                     display: 'flex', 
+    //                     flexDirection:'column'
+    //                 }}
+    //             >
+    //                 <Header global={ globalProps } navigate={ navigate } />           
+    //                 <Home global={ globalProps } />
+    //                 <Projects global={ globalProps } navigate={ navigate }/>
+    //                 <ContactForm global={ globalProps }  />
+    //                 <Footer global={ globalProps } />
+    //             </Box>                     
+    //         </>
+    //     )
+    // }
 }

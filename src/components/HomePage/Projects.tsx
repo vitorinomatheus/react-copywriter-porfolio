@@ -80,7 +80,7 @@ export default function Projects(props: any) {
 
                     <Mui.Typography
                         fontFamily={props.global.primaryFont}
-                        fontSize={{ xs: '1rem', md: '1.3rem', xl: '2rem' }}
+                        fontSize={{ xs: '1rem', md: '1.3rem', xl: '1.8rem' }}
                         color='white'
                         paddingX={{ xs: 3, md: 30 }}
                     >
@@ -98,7 +98,7 @@ export default function Projects(props: any) {
                         <Mui.Grid item md={4} xs={12}>
                             <Mui.Card
                                 sx={{
-                                    height: { md: '32vw', xs: '37vh', xl: '37vw' },
+                                    height: { md: '32vw', xs: '37vh', xl: '34vw' },
                                     cursor: 'pointer',
                                     "&:hover": {
                                         boxShadow: '0px 0px 1px 3px #b00'
@@ -122,7 +122,7 @@ export default function Projects(props: any) {
                                         image={project.img}
                                         alt="Project Image"
                                         sx={{
-                                            height: { md: '25vh', xs: '14vh' }
+                                            height: { md: '25vh', xs: '14vh', xl: '23vh' }
                                         }}
                                     />
 
@@ -139,7 +139,7 @@ export default function Projects(props: any) {
                                             textAlign='center'
                                             alignSelf='end'
                                             height='fitContent'
-                                            fontSize={{ xs: '1rem', md: '1.2rem', xl: '1.8rem' }}
+                                            fontSize={{ xs: '1rem', md: '1.2rem', xl: '1.4rem' }}
                                             fontFamily={props.global.primaryFont}
                                             color={props.global.primaryRed}>
                                             {project.name}
@@ -147,7 +147,8 @@ export default function Projects(props: any) {
 
                                         <Mui.Typography
                                             alignSelf="center"
-                                            fontSize={{ xs: '0.8rem', md: '0.92rem', xl: '1.6rem' }}
+                                            fontSize={{ xs: '0.8rem', md: '0.92rem', xl: '1.2rem' }}
+                                            px={{xl: '2rem'}}
                                         >
                                             {project.description}
                                         </Mui.Typography>
@@ -167,11 +168,12 @@ export default function Projects(props: any) {
                         color: 'white',
                         cursor: 'pointer',
                         display: 'flex',
-                        justifyContent: 'end'
+                        justifyContent: 'end',
+                        alignItems: 'center'
                     }}
                 >
                     <Mui.Typography
-                        fontSize={{ xs: '1rem', md: '1.2rem', xl: '1.8rem' }}
+                        fontSize={{ xs: '1rem', md: '1.2rem', xl: '1.4rem' }}
                     >
                         Ir para portfólio
                     </Mui.Typography>
