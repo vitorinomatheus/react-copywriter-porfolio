@@ -1,6 +1,6 @@
 import * as Mui from '@mui/material'
 import { ThemeProvider } from '@mui/material/styles'
-import MainPicture from "../../assets/IMG_9944.jpg"
+import MainPicture from "../../assets/IMG_9944.jpeg"
 import { useEffect, useState } from 'react';
 
 const aboutMeText = 'Estudo literatura e sou apaixonada pela língua portuguesa';
