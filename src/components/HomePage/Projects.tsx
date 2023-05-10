@@ -35,19 +35,19 @@ const imgsArray = [medium, law, hand]
 const projects: Array<Project> = [
     {
         name: 'Produção literária',
-        description: 'Escrevo textos autorais de teor literário, publico meus trabalhos no medium e já tive a oportundidade de atuar como roteirista de podcast',
+        description: 'Produzo textos autorais de teor literário e publico meus trabalhos no Medium. Também atuei como roteirista de podcast, desenvolvendo habilidades na escrita para diferentes mídias',
         img: medium,
         url: 'https://medium.com/@natmeisen'
     },
     {
         name: 'Copywriting e revisão textual',
-        description: 'Possuo experiência com a produção de conteúdo textual voltado à mídia digital. Trabalhei com redes sociais e blogs, atuando com uma varidade de modos, desde textos curtos para o instagram, até publicações inteiras para blog',
+        description: 'Tenho experiência na produção de conteúdo textual para mídia digital, incluindo redes sociais e blogs. Atuei em diferentes formatos, desde textos curtos para Instagram até publicações inteiras para blogs. Também possuo habilidades em revisão de texto.',
         img: law,
-        url: 'https://planeprev.criacaoprime4.com.br/blog/'
+        url: 'https://planeprev.com.br/blog/'
     },
     {
         name: 'Textos sobre literatura clássica',
-        description: 'Publico todo mês um artigo sobre literatura clássica no "Querido Clássico". Aqui coloco no papel meus estudos e ideas que são parte fundamental do meu processo criativo',
+        description: 'Escrevo mensalmente artigos sobre literatura clássica no blog "Querido Clássico", onde compartilho minhas ideias e reflexões sobre os clássicos da literatura. Essa prática é fundamental para o meu processo criativo e desenvolvimento como escritora.',
         img: hand,
         url: 'https://www.queridoclassico.com/search/label/nat%C3%A1lia%20meisen?max-results=12'
     }

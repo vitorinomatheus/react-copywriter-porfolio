@@ -19,7 +19,7 @@ const projects: Array<Project> = [
         name: 'Textos de marketing jurídico',
         description: 'Escrevi artigos sobre previdência social voltados à área blog do site de uma empresa que oferece serviços jurídicos. O conteúdo tem linguagem acessível ao público e utiliza estratégias de marketing',
         img: law,
-        url: 'https://planeprev.criacaoprime4.com.br/blog/'
+        url: 'https://planeprev.com.br/'
     },
     {
         name: 'Artigos sobre literatura',
@@ -34,10 +34,10 @@ const projects: Array<Project> = [
         url: 'https://medium.com/@natmeisen'
     },
     {
-        name: 'Roteiro para podcast',
-        description: 'Desenvolvi roteiros para podcast em construção. O conteúdo de mídia buscava transportar o ouvinte para experiências sensoriais do dia a dia, como o ato de beber água, utilizando linguagem descritiva e frases de teor sinestésico.',
+        name: 'Copy para instagram da Diferencial Imóveis',
+        description: 'Sou responsável pela produção das legendas dos posts da imobiliária, visando à comunicação efetiva da identidade da marca para o público.',
         img: hand,
-        url:'https://docs.google.com/document/d/e/2PACX-1vTkdRrcSn7RXgSZLwNcn9FcAO84IBJJ3WTbXVVCuwtAFp6vbADxoXqekhJUJSTQvdfBxIQBkd9vf7kf/pub'
+        url:'https://www.instagram.com/diferencialimoveis/'
     }
 ];
 
